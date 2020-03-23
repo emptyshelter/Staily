@@ -17,10 +17,10 @@
 		<mapper resource="com/mybatis3/mapper/GuestMapper.xml"/>
 		<mapper class="com.itwill.guest.mapper.GuestMapper"/>
 		 -->
-		 <mapper class="com.itwill.staily.mapper.BookmarkMapper"/>
-		 <mapper class="com.itwill.staily.mapper.FriendMapper"/>
-		 <mapper class="com.itwill.staily.mapper.MessageMapper"/>
-		 <mapper class="com.itwill.staily.mapper.PaymentMapper"/>
+		 <mapper class="com.itwill.staily.mypage.mapper.BookmarkMapper"/>
+		 <mapper class="com.itwill.staily.mypage.mapper.FriendMapper"/>
+		 <mapper class="com.itwill.staily.mypage.mapper.MessageMapper"/>
+		 <mapper class="com.itwill.staily.mypage.mapper.PaymentMapper"/>
 	</mappers>
 </configuration>
 
