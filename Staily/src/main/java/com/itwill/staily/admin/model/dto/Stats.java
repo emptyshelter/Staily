@@ -1,6 +1,6 @@
 package com.itwill.staily.admin.model.dto;
 
-public class stats {
+public class Stats {
 	//통계번호
 	private int stNo;
 	//방문요일
@@ -34,7 +34,7 @@ public class stats {
 	public void setStVisit(String stVisit) {
 		this.stVisit = stVisit;
 	}
-	public stats(int stNo, String stDate, String stTime, String stVisit) {
+	public Stats(int stNo, String stDate, String stTime, String stVisit) {
 		super();
 		this.stNo = stNo;
 		this.stDate = stDate;
