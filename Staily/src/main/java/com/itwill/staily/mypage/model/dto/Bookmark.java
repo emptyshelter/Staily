@@ -7,6 +7,14 @@ public class Bookmark {
 	public Bookmark() {
 		
 	}
+	
+
+	public Bookmark(int mNo, int pNo) {
+		super();
+		this.mNo = mNo;
+		this.pNo = pNo;
+	}
+
 
 	public int getmNo() {
 		return mNo;

@@ -8,7 +8,7 @@
 		resultType="com.itwill.staily.mypage.model.dto.Message">
 	select *
 	from message
-	where m_no = ?
+	where ms_no = ?
 </select>
 
 <!-- 리스트 출력 -->
@@ -16,10 +16,11 @@
 		resultType="com.itwill.staily.mypage.model.dto.Message">
 	select *
 	from message
+	where m_no = ?
 </select>
 
 <!-- 삽입 -->
-<insert id="insertMessage"
+<insert id="createMessage"
 		parameterType="com.itwill.staily.mypage.model.dto.Message">
 	insert into message (ms_no, m_no, ms_title, ms_content, ms_date) 
         		 values (sequence,?,?,?,sysdate)		
@@ -40,10 +41,6 @@
 	set ms_title, ms_content
 	where ms_no = ?
 </update>
-
-
-
-
 
 
 </mapper>
