@@ -8,7 +8,7 @@
 		resultType="com.itwill.staily.mypage.model.dto.Message">
 	select *
 	from message
-	where m_no = ?
+	where ms_no = ?
 </select>
 
 <!-- 리스트 출력 -->
@@ -16,6 +16,7 @@
 		resultType="com.itwill.staily.mypage.model.dto.Message">
 	select *
 	from message
+	where m_no = ?
 </select>
 
 <!-- 삽입 -->
@@ -40,10 +41,6 @@
 	set ms_title, ms_content
 	where ms_no = ?
 </update>
-
-
-
-
 
 
 </mapper>

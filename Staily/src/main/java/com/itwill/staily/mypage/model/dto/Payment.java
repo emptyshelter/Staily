@@ -12,6 +12,19 @@ public class Payment {
 	public Payment() {
 		
 	}
+	
+
+	public Payment(int pyNo, int mNo, int pyPrice, String pyDate, String pyName, String pyPeriod, String pyType) {
+		super();
+		this.pyNo = pyNo;
+		this.mNo = mNo;
+		this.pyPrice = pyPrice;
+		this.pyDate = pyDate;
+		this.pyName = pyName;
+		this.pyPeriod = pyPeriod;
+		this.pyType = pyType;
+	}
+
 
 	public int getPyNo() {
 		return pyNo;

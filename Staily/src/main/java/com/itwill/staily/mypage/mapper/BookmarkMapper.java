@@ -5,11 +5,11 @@ import java.util.List;
 import com.itwill.staily.mypage.model.dto.Bookmark;
 
 public interface BookmarkMapper {
-	public List<Bookmark> selectList();
+	public List<Bookmark> selectList(int mNo);
 	
-	public int createBookmark();
+	public int createBookmark(Bookmark bookmark);
 	
-	public int deleteBookmark();
+	public int deleteBookmark(int bmNo);
 	
 	
 }
