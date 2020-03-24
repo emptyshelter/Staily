@@ -1,6 +1,6 @@
 package com.itwill.staily.detail.model.dto;
 
-public class comment {
+public class Comment {
 	private int m_no; //회원 번호
 	private int p_no; //상품 번호
 	private int w_no; //작품 번호
@@ -9,11 +9,11 @@ public class comment {
 	private int c_recommend; //추천 수
 	private int c_report; //신고 수
 	
-	public comment() {
+	public Comment() {
 		super();
 	}
 
-	public comment(int m_no, int p_no, int w_no, int c_no, String c_content, int c_recommend, int c_report) {
+	public Comment(int m_no, int p_no, int w_no, int c_no, String c_content, int c_recommend, int c_report) {
 		super();
 		this.m_no = m_no;
 		this.p_no = p_no;
