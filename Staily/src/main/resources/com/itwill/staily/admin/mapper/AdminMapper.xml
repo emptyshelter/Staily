@@ -1,14 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.itwill.staily.admin.mapper.AdminMapper">
+	<!-- 회원 -->
 	<insert id="createWork"
 		parameterType="com.itwill.staily.util.Work">
 		INSERT INTO work VALUES
 		(work_no_seq.nextval,#{wName},#{wCategory},#{wDate},#{wPoster},{#wTepisode},0);
 	</insert>
+	
+	<select id="selectMemberAll" resultType="com.itwill.staily.util.Member">
+		SELECT m_no ,m_id, m_pw,m_name,m_address,m_daddress,m_email,m_type,m_phone
+		FROM member;
+	</select>
+	
+	<select id="selectMemberOne" resultType="com.itwill.staily.util.Member" parameterType="int">
+		SELECT m_no ,m_id, m_pw,m_name,m_address,m_daddress,m_email,m_type,m_phone
+		FROM member
+		WHERE m_no=#{mNo};
+	</select>
+	
+	<update id="updateMember" parameterType="com.itwill.staily.util.Member">
+		UPDATE member SET m_id=#{mId},m_pw=#{mPw},m_name=#{mName},m_address=#{mAddress},
+						m_daddress=#{mDaddress},m_email=#{mEmail},m_type=#{mType},m_phone=#{mPhone}
+		WHERE m_no=#{};
+	</update>
+	
+	<!-- 상품 -->
+	<select id="selectProductAll" resultType="com.itwill.staily.util.Product">
+		SELECT p_no,w_no,p_name,p_price,p_url,p_address,p_daddress,p_check,p_view,p_date
+		FROM product;
+	</select>
+	
+	
+	<!-- 작품 -->
 
-
-
-
+	<!-- 게시글 -->
+	
+	<!-- 통계 -->
 </mapper>
 
