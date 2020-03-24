@@ -1,3 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.itwill.staily.mapper.FriendMapper"></mapper>
+<mapper namespace="com.itwill.staily.mypage.mapper.FriendMapper">
+
+<!-- 리스트 출력 -->
+<select id="friendList"
+		parameterType="int"
+		resultType="com.itwill.staily.mypage.model.dto.Friend">
+	select *
+	from friend f join member m
+	on m.m_no = f.m_no
+	where m.m_no = ?	
+</select>
+
+<!-- 삽입 -->
+<insert id="insertFriend"
+		parameterType="com.itwill.staily.mypage.model.dto.Friend">
+	insert into friend (f_no,m_no) values(?,?)
+</insert>
+
+<!-- 삭제 -->
+<delete id="deleteFriend"
+		parameterType="int">
+	delete from friend
+	where f_no = ?
+</delete>
+
+
+
+</mapper>
