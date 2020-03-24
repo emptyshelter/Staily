@@ -151,7 +151,7 @@ public class Product {
 
 	public void setPdScene(String pdScene) {
 		this.pdScene = pdScene;
-	}
+	} 
 	
 	
 }

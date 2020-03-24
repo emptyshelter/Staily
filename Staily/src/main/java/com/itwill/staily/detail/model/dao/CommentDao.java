@@ -11,5 +11,5 @@ public interface CommentDao {
 	
 	boolean deleteComment(Comment comment) throws Exception;
 	
-	boolean checkCommentUser(Comment comment, int mNo) throws Exception;
+	boolean checkCommentUser(Comment comment, int mNo) throws Exception; 
 }
