@@ -3,6 +3,7 @@ package com.itwill.staily.stylecoodination.model.dao;
 import java.util.List;
 
 import com.itwill.staily.util.Board;
+import com.itwill.staily.util.BoardDetail;
 
 public interface StyleCoodinationDao {
 	/*
@@ -18,33 +19,33 @@ public interface StyleCoodinationDao {
 	/*
 	 * 상세보기
 	 */
-	public Board selectBoardOne();
+	public Board selectBoardOne(int bNo);
 	
 	//원글, 답글 수정
-	public int updateBoard();
+	public int updateBoard(Board board);
 
 	//원글 삭제
-	public int deleteBoard();
+	public int deleteBoard(int groupNo);
 	
 	//답글 삭제
-	public int deleteBoardReply();
+	public int deleteBoardReply(int bNo);
 	
 	//조회수 올리기
-	public int updateView();
+	public int updateView(int bNo);
 	
 	//답글채택
-	public int updateChoice();
+	public int updateChoice(int bNo);
 	
 	//추천수 올리기
-	public int updateRecommend();
+	public int updateRecommend(int bNo);
 	
 	/*
 	 * 질문작성
 	 */
-	public int createBoard();
+	public int createBoard(Board b);
 	
 	//이미지 insert
-	public int createBoardDetail();
+	public int createBoardDetail(BoardDetail bd);
 	
 	
 	
