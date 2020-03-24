@@ -2,26 +2,44 @@ package com.itwill.staily.mypage.model.dao;
 
 import java.util.List;
 
+import com.itwill.staily.mypage.mapper.MessageMapper;
 import com.itwill.staily.mypage.model.dto.Message;
 
 public class MessageDaoImpl implements MessageDao {
+	
+	private MessageMapper messageMapper;
+	
+	public MessageDaoImpl() {
+		
+	}
+	
+
+	public MessageMapper getMessageMapper() {
+		return messageMapper;
+	}
+
+
+	public void setMessageMapper(MessageMapper messageMapper) {
+		this.messageMapper = messageMapper;
+	}
+
 
 	@Override
 	public Message selectOne(int msNo) {
-		// TODO Auto-generated method stub
-		return null;
+		Message message = messageMapper.selectOne(msNo);
+		return message;
 	}
 
 	@Override
 	public List<Message> selectList(int mNo) {
-		// TODO Auto-generated method stub
-		return null;
+		List<Message> messageList = messageMapper.selectList(mNo);
+		return messageList;
 	}
 
 	@Override
 	public int insertMessage(Message message) {
-		// TODO Auto-generated method stub
-		return 0;
+		int insertRow = messageMapper.insertMessage(message);
+		return insertRow;
 	}
 
 	@Override
