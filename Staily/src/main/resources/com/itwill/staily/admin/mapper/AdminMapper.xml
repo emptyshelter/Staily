@@ -6,7 +6,7 @@
 		INSERT INTO work VALUES
 		(work_no_seq.nextval,#{wName},#{wCategory},#{wDate},#{wPoster},{#wTepisode},0);
 	</insert>
-
+	
 
 
 
