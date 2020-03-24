@@ -9,7 +9,7 @@ public interface MainDao{
 	/*
 	 * CREATE Bookmark
 	 */
-	public int createBookmark(int pNo) throws Exception;
+	public boolean createBookmark(int pNo) throws Exception;
 	/*
 	 * SELECT by Bookmark
 	 */
@@ -33,5 +33,5 @@ public interface MainDao{
 	/*
 	 * DELETE Bookmark
 	 */
-	public int deleteBookmark(int pNo) throws Exception;
+	public boolean deleteBookmark(int pNo) throws Exception;
 }
