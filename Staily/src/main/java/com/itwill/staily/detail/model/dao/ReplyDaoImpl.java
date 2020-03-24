@@ -5,6 +5,9 @@ import java.util.List;
 import com.itwill.staily.detail.model.dto.Reply;
 
 public class ReplyDaoImpl implements ReplyDao {
+	public ReplyDaoImpl() {
+		// TODO Auto-generated constructor stub
+	}
 
 	@Override
 	public List<Reply> selectReplyList(int pNo) throws Exception {
