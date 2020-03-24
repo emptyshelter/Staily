@@ -8,6 +8,8 @@ import com.itwill.staily.mypage.model.dto.Bookmark;
 public class BookmarkDaoImpl implements BookmarkDao {
 	private BookmarkMapper bookmarkMapper;
 	
+	
+	
 	public BookmarkDaoImpl() {
 		
 	}
