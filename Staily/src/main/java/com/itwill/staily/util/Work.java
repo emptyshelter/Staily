@@ -9,6 +9,7 @@ W_TEPISODE	NUMBER	Yes		6	작품전체회차
 W_VIEW	NUMBER	Yes		7	작품조회수
 */
 public class Work {
+	//작품
 	private int wNo;
 	private String wName;
 	private String wCategory;
@@ -16,6 +17,63 @@ public class Work {
 	private String wPoster;
 	private int wTepisode;
 	private int wView;
+	//작품상세
+	private int wdNo;
+	private int pNo;
+	private int wdEpisode;
+	private String wdImage;
+	
+	public Work(int wNo, String wName, String wCategory, String wDate, String wPoster, int wTepisode, int wView,
+			int wdNo, int pNo, int wdEpisode, String wdImage) {
+		super();
+		this.wNo = wNo;
+		this.wName = wName;
+		this.wCategory = wCategory;
+		this.wDate = wDate;
+		this.wPoster = wPoster;
+		this.wTepisode = wTepisode;
+		this.wView = wView;
+		this.wdNo = wdNo;
+		this.pNo = pNo;
+		this.wdEpisode = wdEpisode;
+		this.wdImage = wdImage;
+	}
+	
+	public Work(int wNo, String wName, String wCategory, String wDate, String wPoster, int wTepisode, int wView) {
+		super();
+		this.wNo = wNo;
+		this.wName = wName;
+		this.wCategory = wCategory;
+		this.wDate = wDate;
+		this.wPoster = wPoster;
+		this.wTepisode = wTepisode;
+		this.wView = wView;
+	} 
+	public int getWdNo() {
+		return wdNo;
+	}
+	public void setWdNo(int wdNo) {
+		this.wdNo = wdNo;
+	}
+	public int getpNo() {
+		return pNo;
+	}
+	public void setpNo(int pNo) {
+		this.pNo = pNo;
+	}
+	public int getWdEpisode() {
+		return wdEpisode;
+	}
+	public void setWdEpisode(int wdEpisode) {
+		this.wdEpisode = wdEpisode;
+	}
+	public String getWdImage() {
+		return wdImage;
+	}
+	public void setWdImage(String wdImage) {
+		this.wdImage = wdImage;
+	}
+	
 	public int getwNo() {
 		return wNo;
 	}
@@ -58,15 +116,6 @@ public class Work {
 	public void setwView(int wView) {
 		this.wView = wView;
 	}
-	public Work(int wNo, String wName, String wCategory, String wDate, String wPoster, int wTepisode, int wView) {
-		super();
-		this.wNo = wNo;
-		this.wName = wName;
-		this.wCategory = wCategory;
-		this.wDate = wDate;
-		this.wPoster = wPoster;
-		this.wTepisode = wTepisode;
-		this.wView = wView;
-	} 
+	
 	
 }
