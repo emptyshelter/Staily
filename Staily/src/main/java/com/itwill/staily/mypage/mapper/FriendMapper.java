@@ -5,7 +5,7 @@ import java.util.List;
 import com.itwill.staily.mypage.model.dto.Friend;
 
 public interface FriendMapper {
-	public List<Friend> friendList();
+	public List<Friend> selectList();
 	
 	public int insertFriend();
 	
