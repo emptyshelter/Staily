@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package com.itwill.staily.detail.model.dto;
 
 public class comment {
@@ -80,3 +81,10 @@ public class comment {
 		this.c_report = c_report;
 	}
 }
+=======
+package com.itwill.staily.detail.model.dto;
+
+public class comment {
+
+}
+>>>>>>> branch 'master' of https://github.com/emptyshelter/Staily.git
