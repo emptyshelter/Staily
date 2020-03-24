@@ -1,46 +1,54 @@
 package com.itwill.staily.mypage.model.dto;
 
 public class Message {
-	private int ms_no;
-	private int m_no;
-	private String ms_title;
-	private String ms_content;
-	private String ms_date;
+	private int msNo;			//메시지번호
+	private int mNo;			//멤버번호
+	private String msTitle;	//메시지타이틀
+	private String msContent;	//메시지내용
+	private String msDate;		//메시지일시
 	
 	public Message() {
 		
 	}
-	
-	public int getMs_no() {
-		return ms_no;
+
+	public int getMsNo() {
+		return msNo;
 	}
-	public void setMs_no(int ms_no) {
-		this.ms_no = ms_no;
+
+	public void setMsNo(int msNo) {
+		this.msNo = msNo;
 	}
-	public int getM_no() {
-		return m_no;
+
+	public int getmNo() {
+		return mNo;
 	}
-	public void setM_no(int m_no) {
-		this.m_no = m_no;
+
+	public void setmNo(int mNo) {
+		this.mNo = mNo;
 	}
-	public String getMs_title() {
-		return ms_title;
+
+	public String getMsTitle() {
+		return msTitle;
 	}
-	public void setMs_title(String ms_title) {
-		this.ms_title = ms_title;
+
+	public void setMsTitle(String msTitle) {
+		this.msTitle = msTitle;
 	}
-	public String getMs_content() {
-		return ms_content;
+
+	public String getMsContent() {
+		return msContent;
 	}
-	public void setMs_content(String ms_content) {
-		this.ms_content = ms_content;
+
+	public void setMsContent(String msContent) {
+		this.msContent = msContent;
 	}
-	public String getMs_date() {
-		return ms_date;
+
+	public String getMsDate() {
+		return msDate;
 	}
-	public void setMs_date(String ms_date) {
-		this.ms_date = ms_date;
+
+	public void setMsDate(String msDate) {
+		this.msDate = msDate;
 	}
-	
 	
 }
