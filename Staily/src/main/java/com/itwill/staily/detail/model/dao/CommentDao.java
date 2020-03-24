@@ -5,7 +5,7 @@ import java.util.List;
 import com.itwill.staily.detail.model.dto.Comment;
 
 public interface CommentDao {
-	List<Comment> selectCommentAll() throws Exception;
+	List<Comment> selectCommentList(int pNo) throws Exception;
 	
 	boolean createComment(Comment comment) throws Exception;
 	

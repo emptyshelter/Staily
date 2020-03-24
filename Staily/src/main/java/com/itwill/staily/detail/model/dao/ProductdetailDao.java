@@ -1,7 +1,9 @@
 package com.itwill.staily.detail.model.dao;
 
-import com.itwill.staily.util.Work;
+import com.itwill.staily.util.Product;
 
 public interface ProductdetailDao {
-	Work selectWorkOne(int wNo) throws Exception;
+	Product selectProductOne(int pNo) throws Exception;
+	
+	boolean viewMap(int pNo) throws Exception;
 }
