@@ -3,7 +3,7 @@
 <mapper namespace="com.itwill.staily.mypage.mapper.FriendMapper">
 
 <!-- 리스트 출력 -->
-<select id="friendList"
+<select id="selectList"
 		parameterType="int"
 		resultType="com.itwill.staily.mypage.model.dto.Friend">
 	select *

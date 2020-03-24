@@ -5,9 +5,9 @@ import java.util.List;
 import com.itwill.staily.mypage.model.dto.Bookmark;
 
 public interface BookmarkMapper {
-	public List<Bookmark> bookmarkList();
+	public List<Bookmark> selectList();
 	
-	public int insertBookmark();
+	public int createBookmark();
 	
 	public int deleteBookmark();
 	
