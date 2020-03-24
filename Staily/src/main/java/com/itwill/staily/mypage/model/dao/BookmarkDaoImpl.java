@@ -11,7 +11,7 @@ public class BookmarkDaoImpl implements BookmarkDao {
 	
 	
 	public BookmarkDaoImpl() {
-		
+		//////
 	}
 
 	public BookmarkMapper getBookmarkMapper() {
