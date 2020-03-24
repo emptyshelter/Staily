@@ -1,14 +1,13 @@
 package com.itwill.staily.util;
 /*
-W_NO	NUMBER	No		1	��ǰ��ȣ
-W_NAME	VARCHAR2(50 BYTE)	Yes		2	��ǰ�̸�
-W_CATEGORY	CHAR(1 BYTE)	Yes		3	��ǰī�װ���
-W_DATE	VARCHAR2(12 BYTE)	Yes		4	��ǰ��¥
-W_POSTER	VARCHAR2(200 BYTE)	Yes		5	��ǰ������
-W_TEPISODE	NUMBER	Yes		6	��ǰ��üȸ��
-W_VIEW	NUMBER	Yes		7	��ǰ��ȸ�� 
- 
- */
+W_NO	NUMBER	No		1	작품번호
+W_NAME	VARCHAR2(50 BYTE)	Yes		2	작품이름
+W_CATEGORY	CHAR(1 BYTE)	Yes		3	작품카테고리
+W_DATE	VARCHAR2(12 BYTE)	Yes		4	작품날짜
+W_POSTER	VARCHAR2(200 BYTE)	Yes		5	작품포스터
+W_TEPISODE	NUMBER	Yes		6	작품전체회차
+W_VIEW	NUMBER	Yes		7	작품조회수
+*/
 public class Work {
 	private int wNo;
 	private String wName;
