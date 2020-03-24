@@ -4,7 +4,7 @@
 
 
 <!-- 리스트출력 -->
-<select id="bookmarkList"
+<select id="selectList"
 		parameterType="int"
 		resultType="com.itwill.staily.mypage.model.dto.Bookmark">
 	select *
@@ -16,7 +16,7 @@
 </select>
 
 <!-- insert -->
-<insert id="insertBookmark"
+<insert id="createBookmark"
 		parameterType="com.itwill.staily.mypage.model.dto.Bookmark">
 	insert into bookmark (bm_no, m_no,p_no)  values(squence,?,?)
 </insert>

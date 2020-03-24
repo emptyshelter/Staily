@@ -3,7 +3,7 @@
 <mapper namespace="com.itwill.staily.mypage.mapper.MessageMapper">
 
 <!-- 하나출력 -->
-<select id="messageSelect"
+<select id="selectOne"
 		parameterType="int"
 		resultType="com.itwill.staily.mypage.model.dto.Message">
 	select *
@@ -12,7 +12,7 @@
 </select>
 
 <!-- 리스트 출력 -->
-<select id="messageList"
+<select id="selectList"
 		resultType="com.itwill.staily.mypage.model.dto.Message">
 	select *
 	from message
@@ -40,10 +40,6 @@
 	set ms_title, ms_content
 	where ms_no = ?
 </update>
-
-
-
-
 
 
 
