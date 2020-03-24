@@ -1,82 +1,72 @@
 package com.itwill.staily.detail.model.dto;
 
 public class Comment {
-	private int m_no; //회원 번호
-	private int p_no; //상품 번호
-	private int w_no; //작품 번호
-	private int c_no; //댓글 번호
-	private String c_content; //댓글 내용
-	private int c_recommend; //추천 수
-	private int c_report; //신고 수
+	private int cNno; //회원 번호
+	private int cPno; //상품 번호
+	private int cCno; //댓글 번호
+	private String cContent; //댓글 내용
+	private int cRecommend; //추천 수
+	private int cReport; //신고 수
 	
 	public Comment() {
 		super();
 	}
 
-	public Comment(int m_no, int p_no, int w_no, int c_no, String c_content, int c_recommend, int c_report) {
+	public Comment(int cNno, int cPno, int cCno, String cContent, int cRecommend, int cReport) {
 		super();
-		this.m_no = m_no;
-		this.p_no = p_no;
-		this.w_no = w_no;
-		this.c_no = c_no;
-		this.c_content = c_content;
-		this.c_recommend = c_recommend;
-		this.c_report = c_report;
+		this.cNno = cNno;
+		this.cPno = cPno;
+		this.cCno = cCno;
+		this.cContent = cContent;
+		this.cRecommend = cRecommend;
+		this.cReport = cReport;
 	}
 
-	public int getM_no() {
-		return m_no;
+	public int getcNno() {
+		return cNno;
 	}
 
-	public void setM_no(int m_no) {
-		this.m_no = m_no;
+	public void setcNno(int cNno) {
+		this.cNno = cNno;
 	}
 
-	public int getP_no() {
-		return p_no;
+	public int getcPno() {
+		return cPno;
 	}
 
-	public void setP_no(int p_no) {
-		this.p_no = p_no;
+	public void setcPno(int cPno) {
+		this.cPno = cPno;
 	}
 
-	public int getW_no() {
-		return w_no;
+	public int getcCno() {
+		return cCno;
 	}
 
-	public void setW_no(int w_no) {
-		this.w_no = w_no;
+	public void setcCno(int cCno) {
+		this.cCno = cCno;
 	}
 
-	public int getC_no() {
-		return c_no;
+	public String getcContent() {
+		return cContent;
 	}
 
-	public void setC_no(int c_no) {
-		this.c_no = c_no;
+	public void setcContent(String cContent) {
+		this.cContent = cContent;
 	}
 
-	public String getC_content() {
-		return c_content;
+	public int getcRecommend() {
+		return cRecommend;
 	}
 
-	public void setC_content(String c_content) {
-		this.c_content = c_content;
+	public void setcRecommend(int cRecommend) {
+		this.cRecommend = cRecommend;
 	}
 
-	public int getC_recommend() {
-		return c_recommend;
+	public int getcReport() {
+		return cReport;
 	}
 
-	public void setC_recommend(int c_recommend) {
-		this.c_recommend = c_recommend;
-	}
-
-	public int getC_report() {
-		return c_report;
-	}
-
-	public void setC_report(int c_report) {
-		this.c_report = c_report;
-	}
+	public void setcReport(int cReport) {
+		this.cReport = cReport;
+	} 
 }
