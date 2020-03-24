@@ -1,17 +1,24 @@
 package com.itwill.staily.util;
 
 /*
-	m_no NUMBER NOT NULL, 회원번호
-	p_no NUMBER NOT NULL, 상품번호
-	w_no NUMBER NOT NULL, 작품번호
-	p_name VARCHAR2(200), 상품이름
-	p_price NUMBER, 상품가격
-	p_url VARCHAR2(200), 상품url
-	p_address VARCHAR2(100), 상품주소
-	p_daddrress VARCHAR2(50), 상품상세주소
-	p_check CHAR(1), 상품승인여부
-	p_view NUMBER, 상품조회수
-	p_date VARCHAR2(12) 상품등록일
+		이름          널?       유형            
+	----------- -------- ------------- 
+	P_NO        NOT NULL NUMBER        
+	M_NO        NOT NULL NUMBER        
+	W_NO        NOT NULL NUMBER        
+	P_NAME               VARCHAR2(200) 
+	P_PRICE              NUMBER        
+	P_URL                VARCHAR2(200) 
+	P_ADDRESS            VARCHAR2(100) 
+	P_DADDRRESS          VARCHAR2(50)  
+	P_CHECK              CHAR(1)       
+	P_VIEW               NUMBER        
+	P_DATE               VARCHAR2(12)  
+	이름       널?       유형            
+	-------- -------- ------------- 
+	P_NO     NOT NULL NUMBER        
+	PD_IMAGE          VARCHAR2(200) 
+	PD_SCENE          VARCHAR2(200) 
  */
 
 public class Product {
@@ -26,12 +33,15 @@ public class Product {
 	private String pCheck; //상품 승인 여부
 	private int pView; //상품 조회 수
 	
+	private String pdImage; //상품 이미지
+	private String pdScene; //상품 장면
+	
 	public Product() {
 		super();
 	}
-
+	
 	public Product(int pNo, int pMno, int pWno, String pName, int pPrice, String pUrl, String pAddress,
-			String pDaddress, String pCheck, int pView) {
+			String pDaddress, String pCheck, int pView, String pdImage, String pdScene) {
 		super();
 		this.pNo = pNo;
 		this.pMno = pMno;
@@ -43,6 +53,8 @@ public class Product {
 		this.pDaddress = pDaddress;
 		this.pCheck = pCheck;
 		this.pView = pView;
+		this.pdImage = pdImage;
+		this.pdScene = pdScene;
 	}
 
 	public int getpNo() {
@@ -123,6 +135,22 @@ public class Product {
 
 	public void setpView(int pView) {
 		this.pView = pView;
+	}
+
+	public String getPdImage() {
+		return pdImage;
+	}
+
+	public void setPdImage(String pdImage) {
+		this.pdImage = pdImage;
+	}
+
+	public String getPdScene() {
+		return pdScene;
+	}
+
+	public void setPdScene(String pdScene) {
+		this.pdScene = pdScene;
 	}
 	
 	
