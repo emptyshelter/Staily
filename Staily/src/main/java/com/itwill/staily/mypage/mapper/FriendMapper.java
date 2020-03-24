@@ -5,10 +5,10 @@ import java.util.List;
 import com.itwill.staily.mypage.model.dto.Friend;
 
 public interface FriendMapper {
-	public List<Friend> selectList();
+	public List<Friend> selectList(int mNo);
 	
-	public int insertFriend();
+	public int createFriend(Friend friend);
 	
-	public int deleteFriend();
+	public int deleteFriend(int fNo);
 
 }

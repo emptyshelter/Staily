@@ -5,13 +5,13 @@ import java.util.List;
 import com.itwill.staily.mypage.model.dto.Message;
 
 public interface MessageMapper {
-	public Message selectOne();
+	public Message selectOne(int msNo);
 	
-	public List<Message> selectList();
+	public List<Message> selectList(int mNo);
 	
-	public int insertMessage();
+	public int createMessage(Message message);
 	
-	public int deleteMessage();
+	public int deleteMessage(int msNo);
 	
-	public int updateMessage();
+	public int updateMessage(Message message);
 }

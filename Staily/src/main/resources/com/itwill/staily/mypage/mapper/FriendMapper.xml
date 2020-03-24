@@ -13,7 +13,7 @@
 </select>
 
 <!-- 삽입 -->
-<insert id="insertFriend"
+<insert id="createFriend"
 		parameterType="com.itwill.staily.mypage.model.dto.Friend">
 	insert into friend (f_no,m_no) values(?,?)
 </insert>

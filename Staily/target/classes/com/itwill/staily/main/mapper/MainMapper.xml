@@ -37,7 +37,7 @@
 	<insert id="createBookmark" parameterType="java.lang.Integer">
 		insert into bookmark (m_no,p_no)  values(#{m_no},#{p_no});
 	</insert>
-	<delete id="removeBookmark">
+	<delete id="deleteBookmark">
 		delete from bookmark where m_no = #{m_no} and p_no = #{p_no};
 	</delete>
 	

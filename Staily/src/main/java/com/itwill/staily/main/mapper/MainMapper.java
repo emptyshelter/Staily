@@ -19,12 +19,12 @@ public interface MainMapper {
 		9.즐겨찾기 등록하기	
 		10.즐겨찾기 제거하기
 	 */
-	public List<Product> selectByBookmark(int m_no, int p_no);
+	public List<Product> selectByBookmark(int mNo, int pNo);
 	public List<Product> selectByView();
 	public List<Work> selectByCategory(String category);
 	
-	public List selectByWork();
-	public List selectByEpisode();
-	public int createBookmark();
-	public int removeBookmark();
+	public List selectByWork(int wNo);
+	public List selectByEpisode(int episode);
+	public int createBookmark(int pNo);
+	public int deleteBookmark(int pNo);
 }

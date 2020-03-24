@@ -10,6 +10,18 @@ public class Message {
 	public Message() {
 		
 	}
+	
+
+	public Message(int msNo, int mNo, String msTitle, String msContent, String msDate) {
+		super();
+		this.msNo = msNo;
+		this.mNo = mNo;
+		this.msTitle = msTitle;
+		this.msContent = msContent;
+		this.msDate = msDate;
+	}
+
+
 
 	public int getMsNo() {
 		return msNo;

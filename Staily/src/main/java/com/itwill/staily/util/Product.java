@@ -1,113 +1,129 @@
 package com.itwill.staily.util;
 
+/*
+	m_no NUMBER NOT NULL, 회원번호
+	p_no NUMBER NOT NULL, 상품번호
+	w_no NUMBER NOT NULL, 작품번호
+	p_name VARCHAR2(200), 상품이름
+	p_price NUMBER, 상품가격
+	p_url VARCHAR2(200), 상품url
+	p_address VARCHAR2(100), 상품주소
+	p_daddrress VARCHAR2(50), 상품상세주소
+	p_check CHAR(1), 상품승인여부
+	p_view NUMBER, 상품조회수
+	p_date VARCHAR2(12) 상품등록일
+ */
+
 public class Product {
-	private int p_no; //상품 번호
-	private int m_no; //회원 번호
-	private int w_no; //작품 번호
-	private String p_name; //상품 이름
-	private int p_price; //상품 가격
-	private String p_url; //상품 url
-	private String p_address; //상품 주소
-	private String p_daddress; //상품 상세 주소
-	private String p_check; //상품 승인 여부
-	private int p_view; //상품 조회 수
+	private int pNo; //상품 번호
+	private int pMno; //회원 번호
+	private int pWno; //작품 번호
+	private String pName; //상품 이름
+	private int pPrice; //상품 가격
+	private String pUrl; //상품 url
+	private String pAddress; //상품 주소
+	private String pDaddress; //상품 상세 주소
+	private String pCheck; //상품 승인 여부
+	private int pView; //상품 조회 수
 	
 	public Product() {
 		super();
 	}
 
-	public Product(int p_no, int m_no, int w_no, String p_name, int p_price, String p_url, String p_address,
-			String p_daddress, String p_check, int p_view) {
+	public Product(int pNo, int pMno, int pWno, String pName, int pPrice, String pUrl, String pAddress,
+			String pDaddress, String pCheck, int pView) {
 		super();
-		this.p_no = p_no;
-		this.m_no = m_no;
-		this.w_no = w_no;
-		this.p_name = p_name;
-		this.p_price = p_price;
-		this.p_url = p_url;
-		this.p_address = p_address;
-		this.p_daddress = p_daddress;
-		this.p_check = p_check;
-		this.p_view = p_view;
+		this.pNo = pNo;
+		this.pMno = pMno;
+		this.pWno = pWno;
+		this.pName = pName;
+		this.pPrice = pPrice;
+		this.pUrl = pUrl;
+		this.pAddress = pAddress;
+		this.pDaddress = pDaddress;
+		this.pCheck = pCheck;
+		this.pView = pView;
 	}
 
-	public int getP_no() {
-		return p_no;
+	public int getpNo() {
+		return pNo;
 	}
 
-	public void setP_no(int p_no) {
-		this.p_no = p_no;
+	public void setpNo(int pNo) {
+		this.pNo = pNo;
 	}
 
-	public int getM_no() {
-		return m_no;
+	public int getpMno() {
+		return pMno;
 	}
 
-	public void setM_no(int m_no) {
-		this.m_no = m_no;
+	public void setpMno(int pMno) {
+		this.pMno = pMno;
 	}
 
-	public int getW_no() {
-		return w_no;
+	public int getpWno() {
+		return pWno;
 	}
 
-	public void setW_no(int w_no) {
-		this.w_no = w_no;
+	public void setpWno(int pWno) {
+		this.pWno = pWno;
 	}
 
-	public String getP_name() {
-		return p_name;
+	public String getpName() {
+		return pName;
 	}
 
-	public void setP_name(String p_name) {
-		this.p_name = p_name;
+	public void setpName(String pName) {
+		this.pName = pName;
 	}
 
-	public int getP_price() {
-		return p_price;
+	public int getpPrice() {
+		return pPrice;
 	}
 
-	public void setP_price(int p_price) {
-		this.p_price = p_price;
+	public void setpPrice(int pPrice) {
+		this.pPrice = pPrice;
 	}
 
-	public String getP_url() {
-		return p_url;
+	public String getpUrl() {
+		return pUrl;
 	}
 
-	public void setP_url(String p_url) {
-		this.p_url = p_url;
+	public void setpUrl(String pUrl) {
+		this.pUrl = pUrl;
 	}
 
-	public String getP_address() {
-		return p_address;
+	public String getpAddress() {
+		return pAddress;
 	}
 
-	public void setP_address(String p_address) {
-		this.p_address = p_address;
+	public void setpAddress(String pAddress) {
+		this.pAddress = pAddress;
 	}
 
-	public String getP_daddress() {
-		return p_daddress;
+	public String getpDaddress() {
+		return pDaddress;
 	}
 
-	public void setP_daddress(String p_daddress) {
-		this.p_daddress = p_daddress;
+	public void setpDaddress(String pDaddress) {
+		this.pDaddress = pDaddress;
 	}
 
-	public String getP_check() {
-		return p_check;
+	public String getpCheck() {
+		return pCheck;
 	}
 
-	public void setP_check(String p_check) {
-		this.p_check = p_check;
+	public void setpCheck(String pCheck) {
+		this.pCheck = pCheck;
 	}
 
-	public int getP_view() {
-		return p_view;
+	public int getpView() {
+		return pView;
 	}
 
-	public void setP_view(int p_view) {
-		this.p_view = p_view;
-	}	
+	public void setpView(int pView) {
+		this.pView = pView;
+	}
+	
+	
 }
