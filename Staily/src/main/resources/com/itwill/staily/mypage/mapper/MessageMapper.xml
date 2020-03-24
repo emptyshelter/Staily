@@ -20,7 +20,7 @@
 </select>
 
 <!-- 삽입 -->
-<insert id="insertMessage"
+<insert id="createMessage"
 		parameterType="com.itwill.staily.mypage.model.dto.Message">
 	insert into message (ms_no, m_no, ms_title, ms_content, ms_date) 
         		 values (sequence,?,?,?,sysdate)		

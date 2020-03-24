@@ -37,8 +37,8 @@ public class MessageDaoImpl implements MessageDao {
 	}
 
 	@Override
-	public int insertMessage(Message message) {
-		int insertRow = messageMapper.insertMessage(message);
+	public int createMessage(Message message) {
+		int insertRow = messageMapper.createMessage(message);
 		return insertRow;
 	}
 

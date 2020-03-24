@@ -32,8 +32,8 @@ public class FriendDaoImpl implements FriendDao {
 	}
 
 	@Override
-	public int insertFriend(Friend friend) {
-		int insertRow = friendMapper.insertFriend(friend);
+	public int createFriend(Friend friend) {
+		int insertRow = friendMapper.createFriend(friend);
 		return insertRow;
 	}
 

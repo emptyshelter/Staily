@@ -9,7 +9,7 @@ public interface MessageMapper {
 	
 	public List<Message> selectList(int mNo);
 	
-	public int insertMessage(Message message);
+	public int createMessage(Message message);
 	
 	public int deleteMessage(int msNo);
 	
