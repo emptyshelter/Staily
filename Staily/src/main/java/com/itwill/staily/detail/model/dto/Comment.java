@@ -69,5 +69,4 @@ public class Comment {
 	public void setcReport(int cReport) {
 		this.cReport = cReport;
 	}
-
 }
