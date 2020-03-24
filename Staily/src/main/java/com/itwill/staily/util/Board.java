@@ -31,6 +31,36 @@ public class Board {
 	private String bChoice; //답글타입, 선정되면 Y, 아니면 N
 	private BoardDetail boardDetail; // 이미지가 들어있는 Dto
 	
+	public Board() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public Board(int bNo, int mNo, int pNo, String bTitle, String bContent, int bGroupNo, int bStep, int bView,
+			int bRecommend, String bType, String bDate, String bChoice, BoardDetail boardDetail) {
+		super();
+		this.bNo = bNo;
+		this.mNo = mNo;
+		this.pNo = pNo;
+		this.bTitle = bTitle;
+		this.bContent = bContent;
+		this.bGroupNo = bGroupNo;
+		this.bStep = bStep;
+		this.bView = bView;
+		this.bRecommend = bRecommend;
+		this.bType = bType;
+		this.bDate = bDate;
+		this.bChoice = bChoice;
+		this.boardDetail = boardDetail;
+	}
+
+	@Override
+	public String toString() {
+		return "Board [bNo=" + bNo + ", mNo=" + mNo + ", pNo=" + pNo + ", bTitle=" + bTitle + ", bContent=" + bContent
+				+ ", bGroupNo=" + bGroupNo + ", bStep=" + bStep + ", bView=" + bView + ", bRecommend=" + bRecommend
+				+ ", bType=" + bType + ", bDate=" + bDate + ", bChoice=" + bChoice + ", boardDetail=" + boardDetail
+				+ "]";
+	}
+	
 	public int getbNo() {
 		return bNo;
 	}

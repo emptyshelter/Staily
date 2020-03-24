@@ -10,6 +10,20 @@ public class BoardDetail {
 	private int bNo; //게시물번호
 	private String bdImage; //이미지
 	
+	public BoardDetail() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public BoardDetail(int bNo, String bdImage) {
+		super();
+		this.bNo = bNo;
+		this.bdImage = bdImage;
+	}
+
+	@Override
+	public String toString() {
+		return "BoardDetail [bNo=" + bNo + ", bdImage=" + bdImage + "]";
+	}
 	
 	public int getbNo() {
 		return bNo;

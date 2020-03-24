@@ -13,6 +13,21 @@ public class Company {
 	private int coNo; //사업자등록번호
 	private String coCheck; //결제여부
 	
+	public Company() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public Company(int mNo, int coNo, String coCheck) {
+		super();
+		this.mNo = mNo;
+		this.coNo = coNo;
+		this.coCheck = coCheck;
+	}
+
+	@Override
+	public String toString() {
+		return "Company [mNo=" + mNo + ", coNo=" + coNo + ", coCheck=" + coCheck + "]";
+	}
 	
 	public int getmNo() {
 		return mNo;
