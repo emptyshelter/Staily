@@ -2,32 +2,47 @@ package com.itwill.staily.mypage.model.dao;
 
 import java.util.List;
 
+import com.itwill.staily.mypage.mapper.PaymentMapper;
 import com.itwill.staily.mypage.model.dto.Payment;
 
 public class PaymentDaoImpl implements PaymentDao{
+	private PaymentMapper paymentMapper;
+	
+	public PaymentDaoImpl() {
+		
+	}
+
+	public PaymentMapper getPaymentMapper() {
+		return paymentMapper;
+	}
+
+	public void setPaymentMapper(PaymentMapper paymentMapper) {
+		this.paymentMapper = paymentMapper;
+	}
+
 
 	@Override
 	public Payment selectOne(int pyNo) {
-		// TODO Auto-generated method stub
-		return null;
+		Payment payment = paymentMapper.selectOne(pyNo);
+		return payment;
 	}
 
 	@Override
 	public List<Payment> selectList(int mNo) {
-		// TODO Auto-generated method stub
-		return null;
+		List<Payment> paymentList = paymentMapper.selectList(mNo);
+		return paymentList;
 	}
 
 	@Override
 	public int createPayment(Payment payment) {
-		// TODO Auto-generated method stub
-		return 0;
+		int insertRow = paymentMapper.createPayment(payment);
+		return insertRow;
 	}
 
 	@Override
 	public int deletePayment(int py_no) {
-		// TODO Auto-generated method stub
-		return 0;
+		int deleteRow = paymentMapper.deletePayment(py_no);
+		return deleteRow;
 	}
 
 }

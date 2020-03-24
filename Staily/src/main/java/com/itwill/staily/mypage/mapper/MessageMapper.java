@@ -13,5 +13,5 @@ public interface MessageMapper {
 	
 	public int deleteMessage(int msNo);
 	
-	public int updateMessage();
+	public int updateMessage(Message message);
 }

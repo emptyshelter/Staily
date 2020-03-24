@@ -44,14 +44,14 @@ public class MessageDaoImpl implements MessageDao {
 
 	@Override
 	public int deleteMessage(int msNo) {
-		// TODO Auto-generated method stub
-		return 0;
+		int deleteRow = messageMapper.deleteMessage(msNo);
+		return deleteRow;
 	}
 
 	@Override
-	public int updateMessage() {
-		// TODO Auto-generated method stub
-		return 0;
+	public int updateMessage(Message message) {
+		int updateRow = messageMapper.updateMessage(message);
+		return updateRow;
 	}
 
 }
