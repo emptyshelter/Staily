@@ -1,6 +1,6 @@
 package com.itwill.staily.util;
 
-public class BoardDto {
+public class Board {
 	/*
 	이름          널?       유형             
 	----------- -------- -------------- 
@@ -29,7 +29,7 @@ public class BoardDto {
 	private String bType; //게시글타입 일대일문의 Q, 스타일코디 S
 	private String bDate; //작성일
 	private String bChoice; //답글타입, 선정되면 Y, 아니면 N
-	
+	private BoardDetail boardDetail; // 이미지가 들어있는 Dto
 	
 	public int getbNo() {
 		return bNo;
@@ -103,7 +103,12 @@ public class BoardDto {
 	public void setbChoice(String bChoice) {
 		this.bChoice = bChoice;
 	}
-
+	public BoardDetail getBoardDetail() {
+		return boardDetail;
+	}
+	public void setBoardDetail(BoardDetail boardDetail) {
+		this.boardDetail = boardDetail;
+	}
 	
 
 }

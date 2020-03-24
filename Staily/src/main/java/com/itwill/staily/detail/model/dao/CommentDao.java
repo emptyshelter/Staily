@@ -1,5 +1,15 @@
 package com.itwill.staily.detail.model.dao;
 
-public interface CommentDao {
+import java.util.List;
 
+import com.itwill.staily.detail.model.dto.Comment;
+
+public interface CommentDao {
+	List<Comment> selectCommentList(int pNo) throws Exception;
+	
+	boolean createComment(Comment comment) throws Exception;
+	
+	boolean deleteComment(Comment comment) throws Exception;
+	
+	boolean checkCommentUser(Comment comment, int mNo) throws Exception; 
 }

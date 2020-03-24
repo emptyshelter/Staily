@@ -1,6 +1,6 @@
 package com.itwill.staily.util;
 
-public class CompanyDto {
+public class Company {
 	/*
 	 이름       널?       유형      
 	-------- -------- ------- 
