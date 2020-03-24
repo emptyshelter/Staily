@@ -1,6 +1,6 @@
 package com.itwill.staily.util;
 
-public class BoardDetailDto {
+public class BoardDetail {
 	/*
 	 이름       널?       유형            
 	-------- -------- ------------- 
