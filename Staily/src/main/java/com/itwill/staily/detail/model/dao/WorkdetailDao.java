@@ -5,6 +5,5 @@ import com.itwill.staily.util.Work;
 public interface WorkdetailDao {
 	Work selectWorkOne(int wNo) throws Exception;
 	
-	boolean createWork(Work work) throws Exception;
 	
 }
