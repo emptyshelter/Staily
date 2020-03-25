@@ -6,7 +6,7 @@
 <delete id="deleteMember"
 		parameterType="int">
 	delete from member
-	where m_no = ?
+	where m_no = #{mNo}
 </delete>
 
 

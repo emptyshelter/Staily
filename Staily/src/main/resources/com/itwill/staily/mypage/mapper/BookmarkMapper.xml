@@ -12,20 +12,20 @@
 	on b.m_no = p.m_no
 	join work w
 	on p.w_no = w.w_no
-	where p.m_no = ?
+	where p.m_no = #{mNo}
 </select>
 
 <!-- insert -->
 <insert id="createBookmark"
 		parameterType="com.itwill.staily.mypage.model.dto.Bookmark">
-	insert into bookmark (bm_no, m_no,p_no)  values(squence,?,?)
+	insert into bookmark (bm_no, m_no,p_no)  values(squence,#{mNo},#{pNo})
 </insert>
 
 <!-- delete -->
 <delete id="deleteBookmark"
 		parameterType="int">
 	delete from bookmark
-	where bm_no =?
+	where bm_no = #{bm_no}
 </delete>
 
 
