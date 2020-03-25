@@ -9,20 +9,20 @@
 	select *
 	from friend f join member m
 	on m.m_no = f.m_no
-	where m.m_no = ?	
+	where m.m_no = {mNo}	
 </select>
 
 <!-- 삽입 -->
 <insert id="createFriend"
 		parameterType="com.itwill.staily.mypage.model.dto.Friend">
-	insert into friend (f_no,m_no) values(?,?)
+	insert into friend (f_no,m_no) values(#{fNo},#{mNo})
 </insert>
 
 <!-- 삭제 -->
 <delete id="deleteFriend"
 		parameterType="int">
 	delete from friend
-	where f_no = ?
+	where f_no = #{fNo}
 </delete>
 
 
