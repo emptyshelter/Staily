@@ -9,6 +9,11 @@ public interface FriendMapper {
 	
 	public int createFriend(Friend friend);
 	
+	
+	
+	
+	
+	
 	public int deleteFriend(int fNo);
 
 }
