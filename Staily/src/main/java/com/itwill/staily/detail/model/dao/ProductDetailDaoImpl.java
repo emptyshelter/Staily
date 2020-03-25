@@ -2,8 +2,8 @@ package com.itwill.staily.detail.model.dao;
 
 import com.itwill.staily.util.Product;
 
-public class ProductdetailDaoImpl implements ProductdetailDao {
-	public ProductdetailDaoImpl() {
+public class ProductDetailDaoImpl implements ProductDetailDao {
+	public ProductDetailDaoImpl() {
 		// TODO Auto-generated constructor stub
 	}
 
@@ -19,12 +19,6 @@ public class ProductdetailDaoImpl implements ProductdetailDao {
 		return false;
 	}
 
-	@Override
-	public boolean viewMap(int pNo) throws Exception {
-		// TODO Auto-generated method stub
-		return false;
-	}
-	
 	
 	
 }

@@ -3,7 +3,7 @@ package com.itwill.staily.detail.model.dto;
 public class Reply {
 	private int rNno; //회원 번호
 	private int rPno; //상품 번호
-	private int rCno; //댓글 번호
+	private int rNo; //댓글 번호
 	private String rContent; //댓글 내용
 	private int rRecommend; //추천 수
 	private int rReport; //신고 수
@@ -12,11 +12,11 @@ public class Reply {
 		super();
 	}
 
-	public Reply(int rNno, int rPno, int rCno, String rContent, int rRecommend, int rReport) {
+	public Reply(int rNno, int rPno, int rNo, String rContent, int rRecommend, int rReport) {
 		super();
 		this.rNno = rNno;
 		this.rPno = rPno;
-		this.rCno = rCno;
+		this.rNo = rNo;
 		this.rContent = rContent;
 		this.rRecommend = rRecommend;
 		this.rReport = rReport;
@@ -38,12 +38,12 @@ public class Reply {
 		this.rPno = rPno;
 	}
 
-	public int getrCno() {
-		return rCno;
+	public int getrNo() {
+		return rNo;
 	}
 
-	public void setrCno(int rCno) {
-		this.rCno = rCno;
+	public void setrNo(int rNo) {
+		this.rNo = rNo;
 	}
 
 	public String getrContent() {

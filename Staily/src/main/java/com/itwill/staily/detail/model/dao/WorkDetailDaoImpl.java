@@ -2,8 +2,8 @@ package com.itwill.staily.detail.model.dao;
 
 import com.itwill.staily.util.Work;
 
-public class WorkdetailDaoImpl implements WorkdetailDao {
-	public WorkdetailDaoImpl() {
+public class WorkDetailDaoImpl implements WorkDetailDao {
+	public WorkDetailDaoImpl() {
 		// TODO Auto-generated constructor stub
 	}
 
