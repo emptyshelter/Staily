@@ -2,12 +2,6 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.itwill.staily.admin.mapper.AdminMapper">
 	<!-- 회원 -->
-	<insert id="createWork"
-		parameterType="com.itwill.staily.util.Work">
-		INSERT INTO work VALUES
-		(work_no_seq.nextval,#{wName},#{wCategory},#{wDate},#{wPoster},{#wTepisode},0);
-	</insert>
-
 	<select id="selectMemberAll"
 		resultType="com.itwill.staily.util.Member">
 		SELECT m_no ,m_id,
@@ -53,9 +47,36 @@
 		DELETE product WHERE p_no=#{pNo};
 	</delete>
 	<!-- 작품 -->
-
+	
+	<insert id="createWork"
+		parameterType="com.itwill.staily.util.Work">
+		INSERT INTO work VALUES
+		(work_no_seq.nextval,#{wName},#{wCategory},#{wDate},#{wPoster},{#wTepisode},0);
+	</insert>
+	
+	<select id="selectWorkAll" resultType="com.itwill.staily.util.Work">
+		SELECT w_no,w_name,w_category,w_date,w_poster,w_tepisode
+		FROM work;
+	</select>
+	
+	<select id="selectWorkOne" parameterType="int" resultType="com.itwill.staily.util.Work">
+		SELECT w_no,w_name,w_category,w_date,w_poster,w_tepisode
+		FROM work
+		WHERE w_no=#{wNo};		
+	</select>
+	
+	<update id="updateWork" parameterType="int">
+		UPDATE work SET w_name=#{wName},w_category=#{wCategory},w_date=#{wDate},w_poster=#{wPoster},w_tepisode=#{wTepisode}
+		WHERE w_no=#{wNo};
+	</update>
+	
+	<delete id="deleteWork">
+		DELETE work WHERE w_no=#{wNo};
+	</delete>
+	
 	<!-- 게시글 -->
-
+		
 	<!-- 통계 -->
+	
 </mapper>
 
