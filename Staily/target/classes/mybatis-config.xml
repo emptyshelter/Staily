@@ -55,6 +55,9 @@
 		 <mapper class="com.itwill.staily.mypage.mapper.PaymentMapper"/>
 		 <mapper class="com.itwill.staily.login.mapper.LoginMapper"/>
 		 <mapper class="com.itwill.staily.login.mapper.SignUpMapper"/>
+		 <mapper class="com.itwill.staily.detail.mapper.ProductDetailMapper"/>
+		 <mapper class="com.itwill.staily.detail.mapper.ReplyMapper"/>
+		 <mapper class="com.itwill.staily.detail.mapper.WorkDetailMapper"/>
 		 <mapper class="com.itwill.staily.stylecoodination.mapper.BoardManageMapper"/>
 		 <mapper class="com.itwill.staily.stylecoodination.mapper.ReplyManageMapper"/>
 		 <mapper class="com.itwill.staily.stylecoodination.mapper.ViewMapper"/>
