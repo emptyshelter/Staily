@@ -10,6 +10,4 @@ public interface BoardManageMapper {
 	
 	public int deleteBoard(int groupNo);
 	
-	
-	
 }
