@@ -53,7 +53,6 @@
 		<property name="mapperInterface" value="com.itwill.staily.mypage.mapper.PaymentMapper"/>
 		<property name="sqlSessionFactory" ref="sqlSessionFactory"/>
 	</bean>
-<<<<<<< HEAD
 	
 	<bean id="productdetailMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
 		<property name="mapperInterface" value="com.itwill.staily.detail.mapper.ProductDetailMapper"></property>
@@ -70,13 +69,11 @@
 		<property name="sqlSessionFactory" ref="sqlSessionFactory"/>
 	</bean>
 	
-=======
 	<bean id="mainMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
 		<property name="mapperInterface" value="com.itwill.staily.main.mapper.MainMapper"/>
 		<property name="sqlSessionFactory" ref="sqlSessionFactory"/>
 	</bean>
 	-->
->>>>>>> branch 'master' of https://github.com/emptyshelter/Staily.git
 	
 	
 	<!-- sqlSession -->
