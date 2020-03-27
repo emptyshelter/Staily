@@ -19,6 +19,12 @@ public class ProductDetailDaoImpl implements ProductDetailDao {
 		return false;
 	}
 
+	@Override
+	public boolean viewMap(int pNo) throws Exception {
+		// TODO Auto-generated method stub
+		return false;
+	}
+	
 	
 	
 }

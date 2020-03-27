@@ -2,11 +2,13 @@ package com.itwill.staily.util;
 
 public class BoardDetail {
 	/*
-	 이름       널?       유형            
+	이름       널?       유형            
 	-------- -------- ------------- 
 	B_NO     NOT NULL NUMBER        
+	BD_NO    NOT NULL NUMBER        
 	BD_IMAGE NOT NULL VARCHAR2(200) 
 	 */
+	private int bdNo; //보드디테일 게시물번호
 	private int bNo; //게시물번호
 	private String bdImage; //이미지
 	

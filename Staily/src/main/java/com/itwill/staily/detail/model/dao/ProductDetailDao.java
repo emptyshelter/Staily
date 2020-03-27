@@ -7,4 +7,5 @@ public interface ProductDetailDao {
 	
 	boolean createProduct(Product product) throws Exception;
 	
+	boolean viewMap(int pNo) throws Exception;
 }

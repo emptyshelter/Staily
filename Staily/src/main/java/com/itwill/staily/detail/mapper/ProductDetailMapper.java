@@ -7,4 +7,5 @@ public interface ProductDetailMapper {
 	
 	public boolean createProduct(Product product);
 	
+	boolean viewMap(int pNo);
 }

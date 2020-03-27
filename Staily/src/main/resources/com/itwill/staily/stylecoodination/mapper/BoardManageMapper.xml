@@ -3,9 +3,11 @@
 <mapper
 	namespace="com.itwill.staily.stylecoodination.mapper.MainMapper">
 
-<!-- 메인조회 -->
-<select id="">
+<insert id="createBoard" parameterType="Board">
+	
+</insert>
 
-</select>
+<delete id="deleteBoard" parameterType="int">
 
+</delete>
 </mapper>

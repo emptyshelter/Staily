@@ -1,4 +1,4 @@
-package com.itwill.staily.admin.service;
+package com.itwill.staily.admin.model.dao;
 
 import java.util.List;
 
@@ -6,7 +6,7 @@ import com.itwill.staily.util.Member;
 import com.itwill.staily.util.Product;
 import com.itwill.staily.util.Work;
 
-public interface AdminService {
+public interface AdminDao {
 	public List<Member> selectMemberAll();
 	//회원 개별출력
 	public Member selectMemberOne(int mNo) throws Exception;
@@ -36,4 +36,3 @@ public interface AdminService {
 	//상품 삭제
 	public int deleteProduct(int pNo) throws Exception;
 }
-

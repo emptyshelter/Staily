@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://www.springframework.org/schema/beans"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:context="http://www.springframework.org/schema/context"
-	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
-		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+	xmlns:beans="http://www.springframework.org/schema/beans"
+	xsi:schemaLocation="http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 	
 	<context:property-placeholder location="classpath:db/jdbc.properties"/>
 	<!-- Apache DataSource -->
@@ -22,7 +22,18 @@
 		<property name="configLocation" 
 		          value="classpath:mybatis-config.xml"/>
 	</bean>
+	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+		<property name="basePackage" value="com.itwill.staily.**.mapper"/>
+		<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
+	</bean>	  
 	
+	
+	
+	        
+	<!--  
+	<bean id="adminMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
+		<property name="mapperInterface" value="com.itwill.staily.admin.mapper.AdminMapper"/>
+	</bean>
 	<bean id="bookmarkMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
 		<property name="mapperInterface" value="com.itwill.staily.mypage.mapper.BookmarkMapper"/>
 		<property name="sqlSessionFactory" ref="sqlSessionFactory"/>
@@ -42,6 +53,7 @@
 		<property name="mapperInterface" value="com.itwill.staily.mypage.mapper.PaymentMapper"/>
 		<property name="sqlSessionFactory" ref="sqlSessionFactory"/>
 	</bean>
+<<<<<<< HEAD
 	
 	<bean id="productdetailMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
 		<property name="mapperInterface" value="com.itwill.staily.detail.mapper.ProductDetailMapper"></property>
@@ -58,6 +70,13 @@
 		<property name="sqlSessionFactory" ref="sqlSessionFactory"/>
 	</bean>
 	
+=======
+	<bean id="mainMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
+		<property name="mapperInterface" value="com.itwill.staily.main.mapper.MainMapper"/>
+		<property name="sqlSessionFactory" ref="sqlSessionFactory"/>
+	</bean>
+	-->
+>>>>>>> branch 'master' of https://github.com/emptyshelter/Staily.git
 	
 	
 	<!-- sqlSession -->
