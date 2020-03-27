@@ -2,12 +2,15 @@ package com.itwill.staily.admin.model.dao;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 import com.itwill.staily.admin.mapper.AdminMapper;
 import com.itwill.staily.util.Member;
 import com.itwill.staily.util.Product;
 import com.itwill.staily.util.Work;
 
 public class AdminDaoImpl implements AdminDao{
+	@Autowired
 	private AdminMapper adminMapper;
 	
 	public AdminDaoImpl() {
