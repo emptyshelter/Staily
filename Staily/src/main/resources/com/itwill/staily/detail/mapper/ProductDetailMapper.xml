@@ -7,7 +7,7 @@
 		from product p
 		inner join product_detail pd
 		on p.p_no = pd.p_no
-		where p.p_no = #{pNo};
+		where p.p_no = #{pNo}
 	</select>
 	
 	

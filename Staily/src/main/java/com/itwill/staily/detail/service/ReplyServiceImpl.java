@@ -1,29 +1,24 @@
-package com.itwill.staily.detail.model.dao;
+package com.itwill.staily.detail.service;
 
 import java.util.List;
 
-import com.itwill.staily.detail.mapper.ReplyMapper;
+import com.itwill.staily.detail.model.dao.ReplyDao;
 import com.itwill.staily.detail.model.dto.Reply;
 
-public class ReplyDaoImpl implements ReplyDao {
-	private ReplyMapper replyMapper;
-	
-	public ReplyDaoImpl() {
-		// TODO Auto-generated constructor stub
-	}	
+public class ReplyServiceImpl implements ReplyService {
+	private ReplyDao replyDao;		
 
-	public ReplyMapper getReplyMapper() {
-		return replyMapper;
+	public ReplyServiceImpl() {
+		super();
 	}
 
-	public void setReplyMapper(ReplyMapper replyMapper) {
-		this.replyMapper = replyMapper;
+	public void setReplyDao(ReplyDao replyDao) {
+		this.replyDao = replyDao;
 	}
 
 	@Override
 	public List<Reply> selectReplyList(int pNo) throws Exception {
-		List<Reply> replyList = replyMapper.selectReplyList(pNo);
-		return replyList;
+		return replyDao.selectReplyList(pNo);
 	}
 
 	@Override

@@ -43,6 +43,21 @@
 		<property name="sqlSessionFactory" ref="sqlSessionFactory"/>
 	</bean>
 	
+	<bean id="productdetailMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
+		<property name="mapperInterface" value="com.itwill.staily.detail.mapper.ProductDetailMapper"></property>
+		<property name="sqlSessionFactory" ref="sqlSessionFactory"/>
+	</bean>
+	
+	<bean id="replyMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
+		<property name="mapperInterface" value="com.itwill.staily.detail.mapper.ReplyMapper"></property>
+		<property name="sqlSessionFactory" ref="sqlSessionFactory"/>
+	</bean>
+	
+	<bean id="workdetailMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
+		<property name="mapperInterface" value="com.itwill.staily.detail.mapper.WorkDetailMapper"></property>
+		<property name="sqlSessionFactory" ref="sqlSessionFactory"/>
+	</bean>
+	
 	
 	
 	<!-- sqlSession -->

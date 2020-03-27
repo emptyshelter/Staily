@@ -7,7 +7,7 @@
 		from work w
 		inner join episode_detail ed
 		on w.w_no = ed.w_no
-		where w.w_no = #{wNo};	
+		where w.w_no = #{wNo}
 	</select>
 		
 </mapper>
