@@ -16,7 +16,7 @@
 	-->
 	<!-- ********************RequestMappingHandlerMapping********************** -->
 	<context:annotation-config/>
-	<context:component-scan base-package="com.itwill.staily.controller"/>
+	<context:component-scan base-package="com.itwill.staily.**.controller"/>
 	<mvc:annotation-driven/>
 	<mvc:resources mapping="/**" location="/" />
 	<!--  

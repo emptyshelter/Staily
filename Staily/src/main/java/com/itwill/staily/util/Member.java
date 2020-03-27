@@ -26,6 +26,31 @@ public class Member {
 	private String mPhone; // 전화번호
 	private Company mCompany; // 기업회원의 기업정보
 	
+	public Member() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public Member(int mNo, String mId, String mPw, String mName, String mAddress, String mDaddress, String mEmail,
+			String mType, String mPhone, Company mCompany) {
+		super();
+		this.mNo = mNo;
+		this.mId = mId;
+		this.mPw = mPw;
+		this.mName = mName;
+		this.mAddress = mAddress;
+		this.mDaddress = mDaddress;
+		this.mEmail = mEmail;
+		this.mType = mType;
+		this.mPhone = mPhone;
+		this.mCompany = mCompany;
+	}
+
+	@Override
+	public String toString() {
+		return "Member [mNo=" + mNo + ", mId=" + mId + ", mPw=" + mPw + ", mName=" + mName + ", mAddress=" + mAddress
+				+ ", mDaddress=" + mDaddress + ", mEmail=" + mEmail + ", mType=" + mType + ", mPhone=" + mPhone
+				+ ", mCompany=" + mCompany + "]";
+	}
 	
 	public int getmNo() {
 		return mNo;
