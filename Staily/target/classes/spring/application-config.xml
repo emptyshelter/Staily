@@ -22,7 +22,18 @@
 		<property name="configLocation" 
 		          value="classpath:mybatis-config.xml"/>
 	</bean>
+	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+		<property name="basePackage" value="com.itwill.staily.**.mapper"/>
+		<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
+	</bean>	  
 	
+	
+	
+	        
+	<!--  
+	<bean id="adminMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
+		<property name="mapperInterface" value="com.itwill.staily.admin.mapper.AdminMapper"/>
+	</bean>
 	<bean id="bookmarkMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
 		<property name="mapperInterface" value="com.itwill.staily.mypage.mapper.BookmarkMapper"/>
 		<property name="sqlSessionFactory" ref="sqlSessionFactory"/>
@@ -46,6 +57,7 @@
 		<property name="mapperInterface" value="com.itwill.staily.main.mapper.MainMapper"/>
 		<property name="sqlSessionFactory" ref="sqlSessionFactory"/>
 	</bean>
+	-->
 	
 	
 	<!-- sqlSession -->
