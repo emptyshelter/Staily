@@ -1,43 +1,39 @@
-package com.itwill.staily.admin.model.dao;
+package com.itwill.staily.admin.service;
 
 import java.util.List;
 
-import com.itwill.staily.admin.mapper.AdminMapper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.itwill.staily.admin.model.dao.AdminDao;
 import com.itwill.staily.util.Member;
 import com.itwill.staily.util.Product;
 import com.itwill.staily.util.Work;
 
-public class AdminDaoImpl implements AdminDao{
-	private AdminMapper adminMapper;
-	
-	public AdminDaoImpl() {
-	}
-	public AdminDaoImpl(AdminMapper adminMapper) {
-		this.adminMapper = adminMapper;
+@Service
+public class AdminServiceImpl implements AdminService{
+	@Autowired
+	private AdminDao adminDao;
+	public AdminServiceImpl() {
 	}
 	
-	public AdminMapper getAdminMapper() {
-		return adminMapper;
+	public void setAdminDao(AdminDao adminDao) {
+		this.adminDao = adminDao;
 	}
-	public void setAdminMapper(AdminMapper adminMapper) {
-		this.adminMapper = adminMapper;
-	}
-	
+
 	@Override
 	public List<Member> selectMemberAll() {
-		List<Member>memberList = adminMapper.selectMemberAll();
-		return memberList;
+		return adminDao.selectMemberAll();
 	}
 
 	@Override
 	public Member selectMemberOne(int mNo) throws Exception {
-		Member member = adminMapper.selectMemberOne(mNo);
-		return member;
+		return adminDao.selectMemberOne(mNo);
 	}
 
 	@Override
 	public int updateMember(Work work) throws Exception {
-		
+		// TODO Auto-generated method stub
 		return 0;
 	}
 

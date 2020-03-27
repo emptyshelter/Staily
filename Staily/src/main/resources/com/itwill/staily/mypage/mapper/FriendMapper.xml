@@ -6,10 +6,11 @@
 <select id="selectList"
 		parameterType="int"
 		resultType="com.itwill.staily.mypage.model.dto.Friend">
-	select *
-	from friend f join member m
+	select m.m_no, f.f_no, m.m_name
+	from friend f 
+	join member m
 	on m.m_no = f.m_no
-	where m.m_no = {mNo}	
+	where m.m_no = #{mNo}	
 </select>
 
 <!-- 삽입 -->

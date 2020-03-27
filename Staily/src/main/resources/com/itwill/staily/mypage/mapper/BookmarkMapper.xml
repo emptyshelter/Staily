@@ -15,6 +15,22 @@
 	where p.m_no = #{mNo}
 </select>
 
+<!-- 리스트출력 
+<select id="selectList"
+		parameterType="int"
+		resultMap="">
+select b.bm_no, b.m_no,b.p_no,p.p_name,p.pd_scene, m.m_id
+from bookmark b
+join (select pr.p_no p_no, pr.p_name p_name, prd.pd_scene pd_scene
+      from product pr
+      join product_detail prd
+      on pr.p_no=prd.p_no) p
+on b.p_no=p.p_no
+join member m
+on b.m_no = m.m_no
+where b.m_no = #{mNo};
+</select>
+-->
 <!-- insert -->
 <insert id="createBookmark"
 		parameterType="com.itwill.staily.mypage.model.dto.Bookmark">
