@@ -5,8 +5,7 @@ import com.itwill.staily.util.Board;
 public interface BoardManageMapper {
 	public int createBoard(Board b);
 
-	//원글, 답글 수정
-	public int updateBoardAndReply(Board board);
+	//원글 수정은 UtilMapper에 있음
 	
 	public int deleteBoard(int groupNo);
 	
