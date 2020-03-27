@@ -17,9 +17,7 @@
 </update>
 
 <update id="updateBoardAndReplyDetail" parameterType="BoardDetail">
-	UPDATE board_detail 
-	SET bd_image = #{}
-	WHERE bd_no = #{}
+	
 </update>
 
 </mapper>
