@@ -42,7 +42,10 @@
 		<property name="mapperInterface" value="com.itwill.staily.mypage.mapper.PaymentMapper"/>
 		<property name="sqlSessionFactory" ref="sqlSessionFactory"/>
 	</bean>
-	
+	<bean id="mainMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
+		<property name="mapperInterface" value="com.itwill.staily.main.mapper.MainMapper"/>
+		<property name="sqlSessionFactory" ref="sqlSessionFactory"/>
+	</bean>
 	
 	
 	<!-- sqlSession -->
