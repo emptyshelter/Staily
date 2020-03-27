@@ -61,6 +61,7 @@
 		 <mapper class="com.itwill.staily.stylecoodination.mapper.BoardManageMapper"/>
 		 <mapper class="com.itwill.staily.stylecoodination.mapper.ReplyManageMapper"/>
 		 <mapper class="com.itwill.staily.stylecoodination.mapper.ViewMapper"/>
+		 <mapper class="com.itwill.staily.stylecoodination.mapper.UtilMapper"/>
 		 
 	</mappers>
 </configuration>
