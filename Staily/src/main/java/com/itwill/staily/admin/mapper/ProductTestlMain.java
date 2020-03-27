@@ -3,6 +3,7 @@ package com.itwill.staily.admin.mapper;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import com.itwill.staily.admin.model.dao.AdminDao;
 import com.itwill.staily.admin.service.AdminService;
 import com.itwill.staily.admin.service.AdminServiceImpl;
 import com.itwill.staily.util.Member;
@@ -12,11 +13,12 @@ public class ProductTestlMain {
 	public static void main(String[] args) throws Exception {
 		ApplicationContext applicationContext = new ClassPathXmlApplicationContext("classpath:spring/application-config.xml");
 		AdminMapper adm = applicationContext.getBean(AdminMapper.class);
-		
+		AdminDao ad = applicationContext.getBean(AdminDao.class);
 //		AdminServiceImpl as = applicationContext.getBean(AdminServiceImpl.class);
 		//ProductDaoImpl ProductDaoImpl = (ProductDaoImpl)applicationContext.getBean(ProductDaoImpl.class);
 		//ProductMapper ProductMapper = (ProductMapper)applicationContext.getBean(ProductMapper.class);
-		Member member = adm.selectMemberOne(1);
+//		Member member = adm.selectMemberOne(1);
+		Member member = ad.selectMemberOne(1);
 		System.out.println(member);
 		
 		//2.한페이지에표시할 게시물수 
