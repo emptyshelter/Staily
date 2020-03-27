@@ -1,5 +1,5 @@
 package com.itwill.staily.stylecoodination.mapper;
 
-public interface ReplyMapper {
+public interface SReplyMapper {
 	
 }
